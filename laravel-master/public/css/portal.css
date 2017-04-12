@@ -1,0 +1,106 @@
+#loginform{
+    padding: 20%;
+    padding-left: 40%;
+}
+#loginform input{
+    padding: 2%;
+}
+#prblm_table  th, td {
+    padding: 5%;
+}
+
+table, th, td {
+    
+    border-collapse: collapse;
+}
+a{
+    color:  #00008B;
+}
+a:hover{
+    color: #00008B;
+}
+@media only screen and (max-width: 767px) {
+
+   h1,h2, h3, h4, h5, h6{
+                font-size: 10%;
+                color: #000080;
+            }
+            #college_logo{
+    max-height: 50px;
+    width: auto;
+    margin: 2%
+}
+#title{
+    color: white;
+    float: right;
+    margin-top: -8%;
+        font-size: 24px
+}
+}
+
+#op_background{ /* For IE8 and earlier */
+    
+    background-image:url('{{ asset('image/dpa.jpg') }}');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    
+    
+}
+
+
+#title{
+    color: white;
+    float: right;
+    margin-top: -10%
+}
+
+#buttondesign{
+    background-color:  	#00008B;
+    color: white;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 10%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#buttondesign:hover{
+    background-color: white;
+    color:  	#00008B;
+    border: 1px solid  	#00008B;
+}
+
+#college_logo{
+    height: 80px;
+    width: auto;
+    margin: 3%
+}
+#link_style{
+    float:right;
+    color: orangered
+}
+
+#buttondesign{
+    background-color: #003d99;color: white;
+}
+
+#linkstyle{
+    background-color: #003d99;
+    color: white;
+    padding: 1% 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#linkstyle:hover{
+    background-color: white;
+    color: #003d99;
+    padding: 1% 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #003d99;
+}
