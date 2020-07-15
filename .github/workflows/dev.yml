@@ -16,7 +16,7 @@ jobs:
           node-version: "12.x"
       # install dependencies and run semantic-release
       - run: |
-          npx semantic-release@15 -p @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github -b 'development'
+          npx semantic-release@15 -p @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
