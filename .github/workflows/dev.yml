@@ -1,0 +1,29 @@
+name: Release
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+    steps:
+      # check out repository code and setup node
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      # install dependencies and run semantic-release
+      - run: |
+          npx semantic-release@15 -p @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+            #npm install @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/npm -D
+            #Default with semantic-release ->
+            #"@semantic-release/commit-analyzer"
+            #"@semantic-release/github"
+            #"@semantic-release/npm"
+          #"@semantic-release/release-notes-generator"
